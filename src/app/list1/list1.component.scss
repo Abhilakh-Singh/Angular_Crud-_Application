@@ -1,0 +1,22 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .tool{
+    background-color: red;
+    height: 50px;
+  }
+  .main-body{
+    padding-top: 20px;
+    margin: auto;
+    max-width: 1250px;
+    mat-form-field{
+      width: 100%;
+    }
+  }
+ .btn1{
+  margin-left: 25px;
+  width: 150px;
+ }
+ .btn2{
+  margin-left: 25px;
+ }

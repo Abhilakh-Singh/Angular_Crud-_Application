@@ -1,0 +1,96 @@
+<div mat-dialog-title><h3>Add Employee</h3></div>
+
+<form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+  <div mat-dialog-content class="content">
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input
+          matInput
+          type="text"
+          placeholder="Enter Name"
+          formControlName="Name"
+        />
+        
+          <div
+
+         *ngIf="empForm.get('name')?.invalid "
+         class="error-message"
+         style="color: red;"
+       > 
+       {{ validationMessages.name.required }}
+         </div> 
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input
+          matInput
+          type="email"
+          placeholder="Ex. pat@example.com"
+          formControlName="Email"
+          matInput [formControl]="emailFormControl"
+        />
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+          Please enter a valid email address
+        </mat-error>
+
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Email is <strong>required</strong>
+        </mat-error>
+        
+      </mat-form-field>
+    </div>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Address</mat-label>
+      <input
+        matInput
+        type="text"
+        placeholder="Enter Address"
+        formControlName="Address"
+      />
+      <div
+      *ngIf="empForm.get('address')?.touched && empForm.get('address')?.invalid " 
+      
+     class="error-message"
+     style="color: red;"
+     
+   > 
+     {{ validationMessages.address.required }}
+   </div>
+    
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>DOB</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="DOB" />
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle
+        matIconSuffix
+        [for]="picker"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>
+
+  <div class="row">
+    <mat-radio-group
+      aria-label="Select an option"
+      class="radio"
+      formControlName="Gender"
+    >
+      <mat-label>Gender</mat-label>
+      <mat-radio-button value="male">Male</mat-radio-button>
+      <mat-radio-button value="female">Female</mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+  <div mat-dialog-actions class="action">
+    <button mat-raised-button type="button" [mat-dialog-close]="false">
+      Cancel
+    </button>
+    <button mat-raised-button color="primary" type="submit"  [disabled]="this.empForm.invalid">
+      {{ data ? "Update" : "Save" }}
+    </button>
+  </div>
+</form>

@@ -1,0 +1,47 @@
+.card{
+    // width: 100vh;
+    // height: 80vh;
+    // text-align: center;
+    // margin: auto;
+    // border: solid #000000;
+    // background-color:skyblue
+    border: non;
+    width: 500px;
+    padding: 50px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:hsla(205,46%,30%,1);
+    background: linear-gradient(90deg,hsla(205,46%,30%,1)0%,hsla(260,29%,36%,1)100%);
+    text-align: center;
+    width: 100vh;
+}
+.example-full-width{
+    margin: 30px;
+    width: 200px;
+    margin-top: 20px;
+}
+.radio{
+    margin: 17px;
+}
+.button1{
+    margin-right: 30px;
+    width: 27vh;
+
+}
+.button2{
+    margin-right: 30px;
+    width: 27vh;
+
+}
+h2{
+    color: chocolate;
+    margin-top: 0%;
+}
+
+ 
+ 
+ 
+ 
+ 

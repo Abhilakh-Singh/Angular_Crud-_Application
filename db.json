@@ -1,0 +1,87 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": [
+    {
+      "name": "rahul",
+      "email": "rahul@gmail.com",
+      "address": "wswsd",
+      "dob": "2023-10-03T18:30:00.000Z",
+      "gender": "male",
+      "password": "1234",
+      "id": 15
+    },
+    {
+      "name": "raz",
+      "email": "raz@gmail.com",
+      "address": "agra",
+      "dob": "2023-10-03T18:30:00.000Z",
+      "gender": "male",
+      "password": "123",
+      "id": 18
+    },
+    {
+      "name": "Raman shakya",
+      "email": "raman@gmail.com",
+      "address": "etawah",
+      "dob": "2023-10-17T18:30:00.000Z",
+      "gender": "male",
+      "password": "1234",
+      "id": 19
+    }
+  ],
+  "employee": [
+    {
+      "Name": "ssdscd",
+      "Email": "cdcd@gmail.com",
+      "Address": "ede",
+      "DOB": "2023-10-25T18:30:00.000Z",
+      "Gender": "male",
+      "id": 4
+    },
+    {
+      "Name": "rahul s",
+      "Email": "xsdgf@gmail.com",
+      "Address": "jdjds",
+      "DOB": "2023-10-26T18:30:00.000Z",
+      "Gender": "male",
+      "id": 5
+    },
+    {
+      "Name": "tanups",
+      "Email": "xsxs@gmail.com",
+      "Address": "xsxcd",
+      "DOB": "2023-10-26T18:30:00.000Z",
+      "Gender": "male",
+      "id": 7
+    },
+    {
+      "Name": "rajujjssa",
+      "Email": "ramu@gmail.com",
+      "Address": "jagsas",
+      "DOB": "2023-10-23T18:30:00.000Z",
+      "Gender": "male",
+      "id": 8
+    },
+    {
+      "Name": "axsxasaxs",
+      "Email": "s@gmail.com",
+      "Address": "wwsw",
+      "DOB": "2023-10-24T18:30:00.000Z",
+      "Gender": "male",
+      "id": 9
+    }
+  ]
+}

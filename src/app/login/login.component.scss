@@ -1,0 +1,44 @@
+.card{
+    
+    border: non;
+    width: 500px;
+    padding: 50px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:hsla(205,46%,30%,1);
+    background: linear-gradient(90deg,hsla(205,46%,30%,1)0%,hsla(260,29%,36%,1)100%);
+    text-align: center;
+    
+
+}
+.example-full-width{
+    width: 33vh;
+    
+}
+.but1{
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    //margin-left: 10vh;
+    //margin-inline: 135px;
+    margin-inline: 80px;
+}
+.but2{
+    margin: 20px;
+    background-color: white;
+    align-items: center;
+    justify-content: space-evenly; 
+    display: flex;
+    margin-top: -59px;
+     margin-inline: 190px;
+     padding: 20px; 
+    
+
+}
+h2{
+    text-align: center;
+    color: chocolate;
+}
